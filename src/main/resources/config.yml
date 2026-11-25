@@ -1,0 +1,27 @@
+bag:
+  name: "<gold><bold>Cleric's Bag</bold></gold>"
+  max-potions: 16
+  enchantment-glint: true
+  throw-speed: 1.25
+  throw-cooldown-ms: 150
+  show-particles: true
+  # Preview count of upcoming potions shown in item lore
+  lore-preview-count: 5
+
+crafting:
+  enabled: true
+  # Block crafting if the bundle placed in slot 5 still has items inside (prevents accidental item deletion)
+  require-empty-bundle: true
+
+messages:
+  prefix: "<gold>[Cleric's Bag]</gold> "
+  no-permission: "<red>You don't have permission to do that.</red>"
+  empty-bag: "<gray>Cleric's Bag is empty! Shift + Right-Click to open the potion menu.</gray>"
+  bag-full: "<red>Cleric's Bag is full (<white>{max}/{max}</white>).</red>"
+  menu-only: "<red>Store potions inside the Cleric's Bag menu only! <gray>(Shift + Right-Click or Right-Click in inventory)</gray></red>"
+  potions-only: "<red>Only potions can be placed inside Cleric's Bag!</red>"
+  rename-blocked: "<red>Cleric's Bag cannot be renamed!</red>"
+  threw-potion: "<green>Threw <white>{potion}</white> <dark_gray>|</dark_gray> <gray>Next:</gray> <yellow>{next}</yellow> <dark_gray>(<white>{remaining}/{max}</white>)</dark_gray></green>"
+  threw-last-potion: "<green>Threw <white>{potion}</white> <dark_gray>|</dark_gray> <gray>Bag is now empty.</gray></green>"
+  bundle-not-empty: "<red>Empty your bundle before crafting Cleric's Bag so your items aren't lost!</red>"
+  reloaded: "<green>Cleric's Bag config and recipe reloaded.</green>"

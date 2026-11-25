@@ -1,0 +1,28 @@
+name: ClericsBag
+version: 2.1.0
+main: com.clericsbag.ClericsBagPlugin
+api-version: '1.21.11'
+description: High-quality Cleric's Bag holding up to 16 ordered potions with instant right-click throwing and interactive order editor GUI.
+
+commands:
+  clericsbag:
+    description: Commands for Cleric's Bag
+    aliases: [cb, cbag]
+    usage: /clericsbag <give|open|reload> [player] [color]
+    permission: clericsbag.use
+
+permissions:
+  clericsbag.admin:
+    description: Grants access to all Cleric's Bag admin commands
+    default: op
+    children:
+      clericsbag.admin.give: true
+      clericsbag.admin.reload: true
+      clericsbag.use: true
+  clericsbag.admin.give:
+    default: op
+  clericsbag.admin.reload:
+    default: op
+  clericsbag.use:
+    description: Allows crafting, opening, and using Cleric's Bag
+    default: true
